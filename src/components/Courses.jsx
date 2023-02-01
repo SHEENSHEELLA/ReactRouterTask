@@ -24,7 +24,7 @@ const Courses = () => {
   );
 
   useEffect(() => {
-    console.log('sortKey', sortKey);
+    // console.log('sortKey', sortKey);
     if (!SORT_KEYS.includes(sortKey)) {
       navigate('.');
       setSortKey();
@@ -35,8 +35,8 @@ const Courses = () => {
 
   return (
     <>
-      <Dropdown setSortKey={setSortKey} sortKey={sortKey} />
       <h1>{sortKey ? `Courses sorted by ${sortKey}` : 'Courses'}</h1>
+      <Dropdown setSortKey={setSortKey} sortKey={sortKey} />
       {sortedCourses.map((course) => (
         <div key={course.id}>
           <Link to={course.slug} className="courseLink">
