@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+.dropdown {
+  width: 120px;
+  margin-top: 20px;
+  background-color: darkslategray;
+  color: lightyellow;
+  font-size: 25px;
+}
 
 .active {
   color: lightyellow;

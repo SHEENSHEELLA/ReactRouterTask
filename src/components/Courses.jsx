@@ -1,9 +1,9 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import queryString from 'query-string';
 import { useState, useEffect } from 'react';
+import Dropdown from './Dropdown';
 import courses from '../date/courses';
-
-const SORT_KEYS = ['title', 'slug', 'id'];
+import SORT_KEYS from '../date/sortKeys';
 
 function sortCourses(courses, key) {
   const sortedCourses = [...courses];
@@ -24,15 +24,18 @@ const Courses = () => {
   );
 
   useEffect(() => {
+    console.log('sortKey', sortKey);
     if (!SORT_KEYS.includes(sortKey)) {
       navigate('.');
       setSortKey();
       setSortedCourses([...courses]);
     }
+    setSortedCourses(sortCourses(courses, sortKey));
   }, [sortKey, navigate]);
 
   return (
     <>
+      <Dropdown setSortKey={setSortKey} sortKey={sortKey} />
       <h1>{sortKey ? `Courses sorted by ${sortKey}` : 'Courses'}</h1>
       {sortedCourses.map((course) => (
         <div key={course.id}>
