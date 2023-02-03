@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactRouterTask/static/css/main.5c011bac.css",
+    "main.js": "/ReactRouterTask/static/js/main.4dba05bd.js",
+    "index.html": "/ReactRouterTask/index.html",
+    "main.5c011bac.css.map": "/ReactRouterTask/static/css/main.5c011bac.css.map",
+    "main.4dba05bd.js.map": "/ReactRouterTask/static/js/main.4dba05bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c011bac.css",
+    "static/js/main.4dba05bd.js"
+  ]
+}
