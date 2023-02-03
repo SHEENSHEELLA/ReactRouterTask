@@ -11,7 +11,7 @@ const Dropdown = ({ setSortKey, sortKey }) => {
     const nav = `?sort=${key}`;
     navigate(nav);
     setSortKey(key);
-  }, [key]);
+  }, [key, navigate, setSortKey]);
 
   return (
     <div className="dropdown-box">
