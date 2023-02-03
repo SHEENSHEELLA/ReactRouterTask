@@ -1,4 +1,11 @@
-# React Project for the React Course
+# Посмотреть проект => [Deploy React Router task](https://sheensheella.github.io/ReactRouterTask/)
+
+#### React Project Navigation and Course sorting
+- навигация по сайту с использованием React Router (BrowserRouter);
+- ссылки на другие страницы через относительные пути;
+- использование хуков React Router (useLocation, useNavigate);
+- сортировка курсов на основании строки, перенаправление на страницу курсов при отсутствии параметра sort;
+- сортировка через dropdown. 
 
 ## Available Scripts
 
